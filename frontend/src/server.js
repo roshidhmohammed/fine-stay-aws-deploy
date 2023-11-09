@@ -1,6 +1,7 @@
-export const server = "http://localhost:8000/api/v2"
+export const server = process.env.SERVER_URL = "DEVELOPMENT" ? "http://localhost:8000/api/v2" : "/api/v2"
 
-
-// export const server = "http://65.1.1.121:8000/api/v2"
-// export const backend_url = "http://localhost:8000/"
+// SERVER_URL="DEVELOPMENT"
+// SERVER_URL="PRODUCTION"
+// if development , /api/v2/
+// if production, "http://localhost:8000/api/v2"
 
