@@ -8,15 +8,14 @@ const path = require("path");
 
 app.use(express.json());
 app.use(cookieParser());
-// app.use(
-//   cors({
-//     // frontend
-//     // origin: "http://localhost:3000",
-//     origin:"https://finestay.site",
-//     credentials: true,
-//   })
-// );
-app.use(cors());
+app.use(
+  cors({
+    // frontend
+    // origin: "http://localhost:3000",
+    origin:"https://finestay.site",
+    credentials: true,
+  })
+);
 
 
 
