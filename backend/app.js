@@ -11,7 +11,8 @@ app.use(cookieParser());
 app.use(
   cors({
     // frontend
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin:"https://finestay.site",
     credentials: true,
   })
 );
